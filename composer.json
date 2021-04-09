@@ -10,5 +10,11 @@
     "license": "MIT",
     "bin": [
         "bin/brain-games"
-    ]
+    ],
+    "scripts": {
+        "phpcs": [
+            "phpcs"
+        ]
+    }
+
 }

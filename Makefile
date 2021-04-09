@@ -8,4 +8,4 @@ validate:
 	composer validate || echo "Error validate"
 
 lint: 
-	composer exec phpcs -- --standard=PSR12 src bin
+	composer run-script phpcs -- --standard=PSR12 src bin

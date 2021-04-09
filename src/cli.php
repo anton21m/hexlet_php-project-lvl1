@@ -1,7 +1,8 @@
-<?php 
+<?php
+
 namespace Brain\Games\Cli;
 
-require (__DIR__ . "/../vendor/autoload.php");
+require(__DIR__ . "/../vendor/autoload.php");
 
 //Simple variant
 
