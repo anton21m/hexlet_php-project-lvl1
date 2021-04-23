@@ -1,0 +1,36 @@
+#!/usr/bin/env php
+<?php
+
+use function cli\line;
+use function cli\prompt;
+
+require_once __DIR__ . "/../src/cli.php";
+
+require_once __DIR__ . "/brain-games";
+
+line('Answer "yes" if the number is even, otherwise answer "no".');
+
+$i = 1;
+
+while ($i < 4){
+    $number = rand(0, 50);
+    $answerText = ($number % 2 === 0) ? "yes" : "no";
+    line('Question: ' . $number);
+
+    $answer = prompt('Your answer');    
+
+    if ($answerText === $answer){
+        line("Correct!");
+    } else {
+        line("'${answer}' is wrong answer ;(. Correct answer was '${answerText}'."); 
+        break;
+    }
+    $i++;
+}
+
+if ($i === 4){
+    line("Congratulations, ${name}!");
+} else {
+    line("Let's try again, ${name}!");
+}
+

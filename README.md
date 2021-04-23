@@ -5,3 +5,5 @@
 
 
 [![PHP Composer](https://github.com/anton21m/php-project-lvl1/actions/workflows/php.yml/badge.svg)](https://github.com/anton21m/php-project-lvl1/actions/workflows/php.yml)
+
+https://asciinema.org/a/kIXlNPDFsUAFABGkfsIC18opQ
