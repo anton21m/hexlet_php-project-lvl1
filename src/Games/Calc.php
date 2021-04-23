@@ -1,6 +1,6 @@
 <?php
 
-namespace Brain\Games\Cli\Calc;
+namespace Brain\Games;
 
 use function cli\line;
 use function cli\prompt;
@@ -35,8 +35,6 @@ class Calc
 
     public static function run($name)
     {
-
-
         line('What is the result of the expression?');
 
         $i = 1;

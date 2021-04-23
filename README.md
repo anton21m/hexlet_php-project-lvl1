@@ -9,3 +9,4 @@
 Demonstration games
 1. brain-even https://asciinema.org/a/kIXlNPDFsUAFABGkfsIC18opQ
 2. brain-calc https://asciinema.org/a/r3QmZ4aE7xhhrrf3b5FK8IkhX
+3. brain-gcd https://asciinema.org/a/BA1WsiB59OBLkV7VQupejOk6N

@@ -2,9 +2,6 @@
 
 namespace Brain\Games\Cli;
 
-use Brain\Games\Cli\Calc\Calc;
-use Brain\Games\Cli\Calc\Even;
-
 use function cli\line;
 use function cli\prompt;
 
@@ -12,19 +9,19 @@ class Engine
 {
     public $name;
 
-    public function run($games)
+
+    public function run($game)
     {
         //Welcome
         $name = $this->welcome();
 
-        if ($games == "calc") {
-            require_once("Games/Calc.php");
-            Calc::run($name);
-        }
+        $path = __DIR__ . "/Games/" . ucfirst($game) . ".php";
 
-        if ($games == "even") {
-            require_once("Games/Even.php");
-            Even::run($name);
+        if (is_readable($path)) {
+            require_once($path);
+            $className = "\Brain\Games\\" . ucfirst($game);
+
+            $className::run($name);
         }
     }
 
