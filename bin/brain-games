@@ -1,18 +1,11 @@
 #!/usr/bin/env php
 <?php
 
+use Brain\Games\Cli\Engine;
+
 require_once __DIR__ . "/../src/cli.php";
 
-//Simple variant
+require_once __DIR__ . "/../src/Engine.php";
 
-// echo 'Welcome to the Brain Game!', PHP_EOL;
-// echo 'May I have your name? ';
-// $name = trim(fgets(STDIN));
-// echo "Hello, {$name}", PHP_EOL;
-
-use function cli\line;
-use function cli\prompt;
-
-line('Welcome to Brain Game!');
-$name = prompt('May I have your name?');
-line('Hello, %s!', $name);
+$process = new Engine();
+$process->run("");
