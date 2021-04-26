@@ -1,0 +1,11 @@
+#!/usr/bin/env php
+<?php
+
+use Brain\Games\Cli\Engine;
+
+require_once __DIR__ . "/../src/cli.php";
+
+require_once __DIR__ . "/../src/Engine.php";
+
+$process = new Engine();
+$process->run("prime");

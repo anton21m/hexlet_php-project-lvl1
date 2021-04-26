@@ -11,3 +11,4 @@ Demonstration games
 2. brain-calc https://asciinema.org/a/r3QmZ4aE7xhhrrf3b5FK8IkhX
 3. brain-gcd https://asciinema.org/a/BA1WsiB59OBLkV7VQupejOk6N
 4. brain-progression https://asciinema.org/a/MUUsO88aOFIuSE9A81Wn7XlZE
+5. brain-prime https://asciinema.org/a/l9ocn6I5wyGsLPFjiAtbsVP0n
